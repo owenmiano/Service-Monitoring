@@ -1,0 +1,3 @@
+Fields,ID,Service Name,Service Host,Service Port,Service Resource URI,Service Method ,Expected Telnet Response,Expected Request Response,Monitoring Intervals,Monitoring Intervals Time Unit
+Service 1,1,Harambee Members Portal,selfservice.harambeesacco.com,443,/,GET,Connected to selfservice.harambeesacco.com,Welcome to Harambee Sacco Society Ltd Members' Portal,10,Minutes
+Service 2,2,Sky Services Portal,portal.skyworld.co.ke,443,/,GET,Connected to portal.skyworld.co.ke,Welcome to Sky World Limited Services Hub,300,Seconds
