@@ -56,25 +56,19 @@ public class Main {
                     System.err.println("Invalid data format: " + line);
                     continue;
                 }
-
-                String fields = data[0];
-                String serviceId = data[1];
-                String serviceName = data[2];
-                String host = data[3];
-
-                try {
-                    int port = Integer.parseInt(data[4]);
-                    String uri = data[5];
-                    String method = data[6];
-                    String expectedTelnetResponse = data[7];
-                    String expectedRequestResponse = data[8];
-                    int monitoringInterval = Integer.parseInt(data[9]);
-                    String monitoringIntervalTimeUnit = data[10];
-                    // Create a ServiceConfig object for each service
-                    ServiceConfig serviceConfig = new ServiceConfig(serviceId, serviceName, host, port, uri, method,
-                            expectedTelnetResponse, expectedRequestResponse, monitoringInterval, monitoringIntervalTimeUnit);
-
-                    // Monitor service in a separate thread
+                try{
+                ServiceConfig serviceConfig = new ServiceConfig(
+                        data[1],           // serviceId
+                        data[2],           // serviceName
+                        data[3],           // host
+                        Integer.parseInt(data[4]),  // port
+                        data[5],           // uri
+                        data[6],           // method
+                        data[7],           // expectedTelnetResponse
+                        data[8],           // expectedRequestResponse
+                        Integer.parseInt(data[9]),  // monitoringInterval
+                        data[10]           // monitoringIntervalTimeUnit
+                );
                     new Thread(() -> monitorService(serviceConfig)).start();
                 } catch (NumberFormatException e) {
                     System.err.println("Error parsing integer value in data: " + line);
