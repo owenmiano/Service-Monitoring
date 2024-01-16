@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><serviceConfigs>
+    <serviceConfig>
+        <serviceId>1</serviceId>
+        <serviceName>Harambee Members Portal</serviceName>
+        <host>selfservice.harambeesacco.com</host>
+        <port>443</port>
+        <uri>/</uri>
+        <method>GET</method>
+        <expectedTelnetResponse>Connected to selfservice.harambeesacco.com</expectedTelnetResponse>
+        <expectedRequestResponse>Welcome to Harambee Sacco Society Ltd Members' Portal</expectedRequestResponse>
+        <monitoringInterval>10</monitoringInterval>
+        <monitoringIntervalTimeUnit>Minutes</monitoringIntervalTimeUnit>
+        <enableFileLogging>Yes</enableFileLogging>
+        <fileLoggingInterval>Hourly</fileLoggingInterval>
+        <lastLogTime>2024-01-16 19:31:34</lastLogTime>
+        <enableLogsArchiving>Yes</enableLogsArchiving>
+        <logArchivingInterval>Hourly</logArchivingInterval>
+        <lastArchivingTime>2024-01-16 19:31:30</lastArchivingTime>
+    </serviceConfig>
+
+    <serviceConfig>
+        <serviceId>2</serviceId>
+        <serviceName>Sky World Services Portal</serviceName>
+        <host>portal.skyworld.co.ke</host>
+        <port>443</port>
+        <uri>/</uri>
+        <method>GET</method>
+        <expectedTelnetResponse>Connected to portal.skyworld.co.ke</expectedTelnetResponse>
+        <expectedRequestResponse>Welcome to Sky World Limited serviceConfigConfigs Hub</expectedRequestResponse>
+        <monitoringInterval>300</monitoringInterval>
+        <monitoringIntervalTimeUnit>Seconds</monitoringIntervalTimeUnit>
+        <enableFileLogging>Yes</enableFileLogging>
+        <fileLoggingInterval>Hourly</fileLoggingInterval>
+        <lastLogTime>2024-01-16 19:31:34</lastLogTime>
+        <enableLogsArchiving>Yes</enableLogsArchiving>
+        <logArchivingInterval>Hourly</logArchivingInterval>
+        <lastArchivingTime>2024-01-16 19:31:30</lastArchivingTime>
+    </serviceConfig>
+
+    <serviceConfig>
+        <serviceId>3</serviceId>
+        <serviceName>Division D Portal</serviceName>
+        <host>divisiond.district114.org</host>
+        <port>22</port>
+        <uri>/</uri>
+        <method>GET</method>
+        <expectedTelnetResponse>Connected to divisiond.district114.org</expectedTelnetResponse>
+        <expectedRequestResponse>Welcome to Division D Portal</expectedRequestResponse>
+        <monitoringInterval>300</monitoringInterval>
+        <monitoringIntervalTimeUnit>Seconds</monitoringIntervalTimeUnit>
+        <enableFileLogging>Yes</enableFileLogging>
+        <fileLoggingInterval>Hourly</fileLoggingInterval>
+        <lastLogTime>2024-01-16 19:31:34</lastLogTime>
+        <enableLogsArchiving>Yes</enableLogsArchiving>
+        <logArchivingInterval>Hourly</logArchivingInterval>
+        <lastArchivingTime>2024-01-16 19:31:30</lastArchivingTime>
+    </serviceConfig>
+</serviceConfigs>
